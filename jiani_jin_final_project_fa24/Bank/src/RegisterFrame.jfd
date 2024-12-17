@@ -1,0 +1,96 @@
+JFDML JFormDesigner: "7.0.5.4.420" Java: "11.0.14.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				name: "dialogPane"
+				"border": new javax.swing.border.EmptyBorder( 12, 12, 12, 12 )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq l {space :p:35:p, par l {comp label1::l:p::p, comp label5:::p::p, comp label4::l:p::p, comp label6::l:p::p, comp label3:::p::p, comp label2::l:p::p}, space :p:84:p, par t {comp pwdText::l:::x, seq {comp nameText:::p:116:p, space :0:0:x}, comp usernameText::t:::x, comp sexText::t:::x, comp balanceText:::::x, comp birthdayText::t:::x}, space :p:91:p}}"
+					"$verticalGroup": "par l {seq l {space :::p, par b {comp label1::b:p::p, comp usernameText::b:p::p}, space :p:19:p, par b {comp label2::b:p::p, comp pwdText::b:p::p}, space ::25:x, par b {comp label3::b:p::p, comp nameText::b:p::p}, space :p:27:p, par b {comp label4::b:p::p, comp sexText::b:p::p}, space :p:27:p, par b {comp label5::b:p::p, comp balanceText::b:p::p}, space :p:20:p, par b {comp label6::b:p::p, comp birthdayText::b:p::p}, space :p:28:p}}"
+				} ) {
+					name: "contentPanel"
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label1"
+						"text": "username"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "usernameText"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label2"
+						"text": "password"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "pwdText"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label3"
+						"text": "real name"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "nameText"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label4"
+						"text": "sex"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "sexText"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label5"
+						"text": "Balance"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "balanceText"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label6"
+						"text": "birthday"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "birthdayText"
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "Center"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
+					"$columnSpecs": "0:1.0, 80, 80"
+					"$rowSpecs": "0"
+					"$hGap": 5
+					"$vGap": 5
+				} ) {
+					name: "buttonBar"
+					"border": new javax.swing.border.EmptyBorder( 12, 0, 0, 0 )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "okButton"
+						"text": "save"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "ok", true ) )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridx": 1
+						"gridy": 0
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "cancelButton"
+						"text": "return"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "loginreturn", true ) )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridx": 2
+						"gridy": 0
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "South"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 400, 430 )
+		} )
+	}
+}

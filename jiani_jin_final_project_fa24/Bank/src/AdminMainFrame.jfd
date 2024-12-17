@@ -1,0 +1,142 @@
+JFDML JFormDesigner: "7.0.5.4.420" Java: "11.0.14.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {par l {seq {space :p:44:p, comp userinfoBtn:::p::p, space :p:60:p, comp countBtn:::p::p}, seq l {space :p:18:p, comp mainPanel:::p:356:p}}, space ::24:x}}"
+			"$verticalGroup": "par l {seq {space :p:20:p, par b {comp userinfoBtn::b:p::p, comp countBtn::b:p::p}, space s:::p, comp mainPanel:::::x, space :::p}}"
+		} ) {
+			name: "this"
+			"minimumSize": new java.awt.Dimension( 500, 400 )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "userinfoBtn"
+				"text": "View account information"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "showuserinfo", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "countBtn"
+				"text": "Statistics"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "countinfo", true ) )
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.CardLayout ) ) {
+				name: "mainPanel"
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq l {space :p:30:p, par l {seq l {par t:::p {comp label9::l::61:x, comp label3::l::61:x, comp label6::l::61:x, comp label5::l:::x}, space :p:34:p, par l:::p {comp usernameTxT::::119:x, comp sexTxT::::119:x, comp birthdayTxT::l::119:x, comp balanceTxT::l::119:x}}, seq l {comp label2:::p:70:p, space u:::p, par l {comp cardtip:::p:119:p, seq {comp cardTxT:::p:138:p, space :p:27:p, comp viewinfo:::p::p}}}}, space ::1:x}}"
+					"$verticalGroup": "par l {seq l {space :p:23:p, par b {comp label2::b:p:27:p, comp cardTxT::b:p::p, comp viewinfo::b:p::p}, space s:::p, par b {comp label3::b:p::p, comp usernameTxT::b:p::p}, space :p:22:p, par b {comp sexTxT::b:p::p, comp label6::b:p::p}, space s:::p, par b {comp label5::b:p::p, comp balanceTxT::b:p::p}, space :p:28:p, par l {comp label9:::p::p, comp birthdayTxT:::p::p}, space :p:26:p, comp cardtip:::p::p, space ::33:x}}"
+				} ) {
+					name: "userPanel"
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label2"
+						"text": "Please enter your card number"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "cardTxT"
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "viewinfo"
+						"text": "Check"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "viewinfo", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label3"
+						"text": "username"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "usernameTxT"
+						"text": "Please inquire"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label5"
+						"text": "Balance"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label6"
+						"text": "gender"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "sexTxT"
+						"text": "Please inquire"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "balanceTxT"
+						"text": "Please inquire"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label9"
+						"text": "Birthday"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "birthdayTxT"
+						"text": "Please inquire"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "cardtip"
+						"foreground": sfield java.awt.Color red
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "card1"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq l {space :p:33:p, par l {par l:l::p {comp label16:::::x, comp label10:::::x, comp label1:::p::p, comp label11::l:::x, comp label12::l:p::p}, comp label17::l:p::p}, space :p:38:p, par l:::p {comp open::::74:x, comp monthinput::::74:x, comp monthoutput::l::74:x, comp inputmoney::::74:x, comp accountmoney::::74:x, comp tranmoneyTxT::::74:x}, space ::139:x}}"
+					"$verticalGroup": "par l {seq l {space :p:30:p, par b {comp label1::b:p::p, comp open::b:p::p}, space s:::p, par b {comp label10::b:p::p, comp monthinput::b:p::p}, space s:::p, par b {comp label11::b:p::p, comp monthoutput::b:p::p}, space s:::p, par b {comp label12::b:p::p, comp inputmoney::b:p::p}, space s:::p, par b {comp label16::b:p::p, comp accountmoney::b:p::p}, space s:::p, par b {comp label17::b:p::p, comp tranmoneyTxT::b:p::p}, space ::62:x}}"
+				} ) {
+					name: "countPanel"
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label1"
+						"text": "Number of account holders"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label10"
+						"text": "This month's deposit amount"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label11"
+						"text": "Withdrawal amount this month"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label12"
+						"text": "Net deposit this month"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "open"
+						"text": "text"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "monthinput"
+						"text": "text"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "monthoutput"
+						"text": "text"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "inputmoney"
+						"text": "text"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label16"
+						"text": "Total deposit amount"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "accountmoney"
+						"text": "text"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label17"
+						"text": "Total amount of transfer"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "tranmoneyTxT"
+						"text": "text"
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "card2"
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 400, 390 )
+		} )
+	}
+}

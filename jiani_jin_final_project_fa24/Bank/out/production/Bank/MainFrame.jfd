@@ -1,0 +1,191 @@
+JFDML JFormDesigner: "7.0.5.4.420" Java: "11.0.14.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :p:25:p, par t {comp mainpanel:::p:351:p, seq {par t:::p {comp button1:::::x, comp button4:::::x}, space :p:46:p, par l:::p {comp button5:::::x, comp showUpdateBtn:::::x}, space :30:30:p, par l {comp button3::l:p::p, comp button6::t:p::p}}}, space ::22:x}}"
+			"$verticalGroup": "par l {seq l {space :p:23:p, par b {comp button3::b:p::p, comp showUpdateBtn::b:p::p, comp button1::b:p::p}, space s:::p, par b {comp button6::b:p::p, comp button5::b:p::p, comp button4::b:p::p}, space u:::p, comp mainpanel:::::x, space :::p}}"
+		} ) {
+			name: "this"
+			"minimumSize": new java.awt.Dimension( 500, 380 )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "查看账户"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "showInfo", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "showUpdateBtn"
+				"text": "修改个人信息"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "showUpdate", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button3"
+				"text": "存款"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "showmoney", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button4"
+				"text": "取款"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "showqukuan", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button5"
+				"text": "转账"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "showzhuanzhang", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button6"
+				"text": "重新登录"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "returnlogin", true ) )
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.CardLayout ) ) {
+				name: "mainpanel"
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq t {space :::x, comp label1:::p::p, space :p:140:p}, seq l {space :p:21:p, par l {comp label4::l:p::p, comp label5::l:p::p, comp label6::l:p::p}, space :::p, par l:::p {comp realnameTxT::::98:x, comp pwdTxT::::98:x, comp sexTxT::::98:x}, space s:::p, par l {seq {comp label9:::p::p, space s:::p, comp birthdayTxt::::103:x}, seq {par l {seq t {comp label7:::p::p, space :::p}, seq l {comp label8:::p::p, space :::x}}, par l:::p {comp loginnameTxt::::103:x, comp moneyTxt::::103:x}}}, space :p:15:p}, seq l {space :p:149:p, comp updateBtn:::p::p, space ::120:x}}"
+					"$verticalGroup": "par l {seq l {space :::p, comp label1:::p::p, space :::p, par b {comp label4::b:p::p, comp label7::b:p::p, comp realnameTxT::b:p::p, comp loginnameTxt::b:p::p}, space u:::p, par b {comp label5::b:p::p, comp label8::b:p::p, comp moneyTxt::b:p::p, comp pwdTxT::b:p::p}, space u:::p, par b {comp label6::b:p::p, comp label9::b:p::p, comp birthdayTxt::b:p::p, comp sexTxT::b:p::p}, space s:::p, comp updateBtn:::p::p, space ::38:x}}"
+				} ) {
+					name: "infoPanel"
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label1"
+						"text": "信息界面"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label4"
+						"text": "真实姓名"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label5"
+						"text": "密码"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label6"
+						"text": "性别"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label7"
+						"text": "登录名"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label8"
+						"text": "余额"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label9"
+						"text": "生日"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "realnameTxT"
+						"editable": false
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "pwdTxT"
+						"editable": false
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "sexTxT"
+						"editable": false
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "moneyTxt"
+						"editable": false
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "loginnameTxt"
+						"editable": false
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "birthdayTxt"
+						"editable": false
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "updateBtn"
+						"text": "确定修改"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "sureupdate", true ) )
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "infoPanel"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq {par l {seq l {par l {seq l {space :p:17:p, comp moneylab:::p::p}, seq l {space :p:31:p, comp label2:::p::p}}, space :p:29:p, par l {comp money:::p::p, comp takemoneyTxT:::p:127:p}}, seq {space :p:204:p, comp tip:::p:123:p}, seq l {space :p:70:p, comp surecunkuan:::p::p, space :::p, comp button7:::p::p}}, space ::24:x}}"
+					"$verticalGroup": "par l {seq l {space :p:8:p, par l {comp label2:::p::p, comp money:::p::p}, space u:::p, par b {comp moneylab::b:p::p, comp takemoneyTxT::b:p::p}, space :p:39:p, par b {comp surecunkuan::b:p::p, comp button7::b:p::p}, space u:::p, comp tip:::p::p, space ::81:x}}"
+				} ) {
+					name: "cunkuanPanle"
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "moneylab"
+						"text": "请输入取款金额"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "takemoneyTxT"
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button7"
+						"text": "确定取款"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "updatemoney", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label2"
+						"text": "可用余额"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "money"
+						"minimumSize": new java.awt.Dimension( 20, 12 )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "tip"
+						"foreground": sfield java.awt.Color red
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "surecunkuan"
+						"text": "确定存款"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "sureCunkuan", true ) )
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "cunkuanPanle"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq l {space :p:30:p, par l {comp totalmoney:::p::p, comp label10:::p::p, comp label11::l:p::p}, space :p:34:p, par l {comp okmoney::::115:x, comp yourcard:::::x, comp zhuanmoney::::115:x}, space :p:124:p}, seq l {space :p:135:p, par l {comp zztip:::p::p, comp button8:::p::p}, space ::134:x}}"
+					"$verticalGroup": "par l {seq l {space :p:24:p, par b {comp totalmoney::b:p::p, comp okmoney::b:p::p}, space s:::p, par b {comp yourcard::b:p::p, comp label10::b:p::p}, space s:::p, par b {comp label11::b:p::p, comp zhuanmoney::b:p::p}, space s:::p, comp button8:::p::p, space u:::p, comp zztip:::p::p, space ::15:x}}"
+				} ) {
+					name: "zhuanzhangPanel"
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "totalmoney"
+						"text": "可转金额"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "okmoney"
+						"text": "lab"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label10"
+						"text": "对方卡号"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "yourcard"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label11"
+						"text": "转账金额"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "zhuanmoney"
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button8"
+						"text": "确定转账"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "trantermoney", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "zztip"
+						"foreground": sfield java.awt.Color red
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "zhuanzhangPanel"
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 400, 380 )
+		} )
+	}
+}
